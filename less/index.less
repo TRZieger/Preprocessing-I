@@ -48,12 +48,70 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
     height: 100%;
 }
+
+
+//* VARIABLES *//
+@Back: #eee8aa;
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  max-width: 880px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.navBar { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+      height: 105px;
+      align-items: center;
+      border: 2px grey solid;
+      font-family: "Courier New",
+      Courier, 
+      "Lucida Sans Typewriter", 
+      "Lucida Typewriter", 
+      monospace; 
+      font-size: 32px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 700; 
+      line-height: 15.4px;
+      width: 1000px;
+	  background-color: @Back;
+	  padding-right: 100px;
+}
+   
+   
+  
+.navLinks {
+	   
+	   
+	   height: 65px;
+	   padding-top: 40px;
+	  
+   }
+   
+.navLink {
+	 padding: 20px;
+	 border: peru solid 1px;
+	 color: brown;
+	 
+   }
+   
+   
+
 
