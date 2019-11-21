@@ -1,117 +1,140 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-html, body {
-    height: 100%;
-}
-
-
-//* VARIABLES *//
-@Back: #eee8aa;
-
-
-
 html,
 body {
-  height: 100%;
+ height: 100%;
 }
 
-.content {
-  max-width: 880px;
-  margin: auto;
-  justify-content: center;
+
+header {
   display: flex;
+  justify-content: center;
+  
 }
 
-.navBar { 
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      
-      height: 105px;
-      align-items: center;
-      border: 2px grey solid;
-      font-family: "Courier New",
-      Courier, 
-      "Lucida Sans Typewriter", 
-      "Lucida Typewriter", 
-      monospace; 
-      font-size: 32px; 
-      font-style: normal; 
-      font-variant: normal; 
-      font-weight: 700; 
-      line-height: 15.4px;
-      width: 1000px;
-	  background-color: @Back;
-	  padding-right: 100px;
+.initials {
+	padding-right: 400px;
+	font-family: cursive;
+	padding-top: 5px;
 }
-   
-   
-  
-.navLinks {
-	   
-	   
-	   height: 65px;
-	   padding-top: 40px;
-	  
-   }
-   
-.navLink {
-	 padding: 20px;
-	 border: peru solid 1px;
-	 color: brown;
+
+
+		nav {
+			display: flex;
+			justify-content: flex-end;
+			height: 105px;
+			border: 2px grey solid;
+			font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+			font-size: 32px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 700;
+			line-height: 15.4px;
+			width: 1600px;
+			background-color: #eee8aa;
+		}
+
+
+			.navLinks {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+			  }
+
 	 
-   }
-   
-   
+			  .navLink {
+				padding: 20px;
+				border: peru solid 1px;
+				color: brown;
+				padding-top: 44px;
+			  }
+		
+
+
+
+  
+  
+
+
+
+.topSection {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin: auto;
+	justify-content: space-evenly;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #eee8aa;
+	border-bottom: 10px solid black;
+	
+
+	.intro {
+		width: 440px;
+		border: black solid 2px;
+		font-size: 30px;
+	}  
+	
+
+	.skills {
+		width: 440px;
+		border: black solid 2px;
+		font-size: 30px;
+	}
+	
+}
+
+.lowerSection {
+	height: 480px;
+	border-bottom: 10px solid black;
+	margin: 0px 0px 30px 0px;
+	display: flex;
+	background-color: #eee8aa;
+
+	
+
+}
+
+.workHistory {
+	
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+		height: 480px;
+		font-size: 40px;
+		background-color: #eee8aa;
+		padding-right: 100px;
+	}
+
+	ul {
+		
+		padding-left: 500px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 30px;
+		margin: 20px;
+	}
+
+
+address {
+    border-top: 10px solid black;
+	font-size: 30px;
+	color: brown;
+	background-color: #eee8aa;
+
+}
+  footer {
+	  display:flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-size: 15px;
+	  
+  }
+ 
+
+@media max-width 500px {
+	
+}
+
+
 
 
